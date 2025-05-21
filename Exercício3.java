@@ -26,7 +26,7 @@ public class Exercício3 {
 
 		System.out.println("Digite valor do imposto IPI a ser acrescentado (0-30%)");
 		double IPI = sc.nextDouble();
-		if(IPI > 0 && IPI < 30) {
+		if(IPI >= 0 && IPI <= 30) {
 			double Formula = (ValorPeca1*QuantPeca1 + ValorPeca2*QuantPeca2)*(IPI/100+1);
 			System.out.println(+Formula);			
 		}else {			
